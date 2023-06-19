@@ -89,7 +89,7 @@ namespace Chat
                 try
                 {
                     if (string.IsNullOrEmpty(messages[i])) continue;
-                    print(String.Format("[{0}]{1}:{2}.", messages[i].Split('~')[0], messages[i].Split('~')[1], messages[i].Split('~')[2]));
+                    print(String.Format("[{0}] {1}: {2}.", messages[i].Split('~')[0], messages[i].Split('~')[1], messages[i].Split('~')[2]));
                 }
                 catch
                 {

@@ -25,7 +25,7 @@ namespace Client_Server
         private static void handlerCommands(string cmd)
         {
             cmd = cmd.ToLower();
-            if (cmd.Contains("/getusers"))
+            if (cmd.Contains("/getallusers"))
             {
                 int countUsers = Server.Clients.Count;
                 for (int i = 0; i < countUsers; i++)

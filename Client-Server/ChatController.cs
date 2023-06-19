@@ -31,7 +31,7 @@ namespace Client_Server
                 if (countMessages > _maxMessage) ClearChat();
                 message newMessage = new message(timenow, userName, msg);
                 Chat.Add(newMessage);
-                Console.WriteLine("New message [{0}]{1}: {2}.", timenow, userName, msg);
+                Console.WriteLine("New message [{0}] {1}: {2}.", timenow, userName, msg);
                 Server.UpdateAllChats();
             }
             catch (Exception exp) { Console.WriteLine("Error with addMessage: {0}.", exp.Message); }
